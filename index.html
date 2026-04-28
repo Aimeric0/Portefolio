@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aimeric Egal — Portfolio Technicien SI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">AE · Portfolio</span>
+      <ul class="nav-links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="wrap">
+    <header>
+      <div class="hero-tag">Étudiant B2 Informatique · Technicien SI</div>
+      <h1 class="hero-name">Aimeric<br><span>Egal</span></h1>
+      <p class="hero-bio">
+        Passionné par l'administration des systèmes d'information, le support utilisateur et la gestion d'infrastructure IT. En formation spécialisée, je mets en place des environnements robustes et j'accompagne les utilisateurs au quotidien.
+      </p>
+      <div class="hero-chips">
+      <div class="section-header">
+        <span class="section-label">Bio</span>
+        <h2 class="section-title">À propos</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-label">Formation</div>
+          <div class="about-card-val">Bachelor Informatique — B2</div>
+          <div class="about-card-sub">Spécialisation Technicien SI</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-label">Objectif professionnel</div>
+          <div class="about-card-val">Technicien SI ou Administrateur systèmes junior</div>
+        </div>
+        <div class="about-card wide">
+          <div class="about-card-label">Compétences techniques</div>
+          <div class="skills-wrap">
+            <span class="skill">Windows Server</span>
+            <span class="skill">Active Directory</span>
+            <span class="skill">Linux Debian</span>
+            <span class="skill">Proxmox VE</span>
+            <span class="skill">PowerShell</span>
+            <span class="skill">Bash</span>
+            <span class="skill">GPO</span>
+            <span class="skill">DNS / DHCP</span>
+            <span class="skill">Git</span>
+            <span class="skill">TCP/IP</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <!-- PROJETS -->
+    <section id="projets">
+      <div class="section-header">
+        <span class="section-label">04</span>
+        <h2 class="section-title">Projets</h2>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- 01 -->
+          <div class="project" id="p1">
+    <div class="project-header" onclick="toggle('p1')">
+      <span class="project-num">01</span>
+      <div class="project-body">
+        <div class="project-title">Déploiement SIEM avec Wazuh</div>
+        <div class="project-desc">Installation, configuration et durcissement d'une solution de détection d'intrusions et de monitoring de sécurité.</div>
+        <div class="project-tags">
+          <span class="tag">Wazuh</span>
+          <span class="tag">Cyber-sécurité</span>
+          <span class="tag">Linux</span>
+          <span class="tag">GitHub Docs</span>
+        </div>
+      </div>
+      <div class="project-meta">
+        <span class="project-badge">Sécurité · SOC</span>
+        <div class="project-toggle">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M5 1v8M1 5h8" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="project-detail">
+      <p class="project-detail-text">
+        Mise en place d'une infrastructure Wazuh pour la surveillance centralisée des logs et la détection de vulnérabilités. Configuration des agents sur différents endpoints (Windows/Linux), création de règles de détection personnalisées et analyse des alertes de sécurité via le tableau de bord Kibana. L'intégralité de la documentation technique et des procédures d'installation a été rédigée et publiée sur un dépôt GitHub.
+      </p>
+      <div class="project-stats">
+        <div class="stat">
+          <div class="stat-label">Durée</div>
+          <div class="stat-val">4 semaines</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Statut</div>
+          <div class="stat-val"><span class="status-dot dot-done"></span>Terminé</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Lien</div>
+          <div class="stat-val">GitHub</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project" id="p2">
+    <div class="project-header" onclick="toggle('p2')">
+      <span class="project-num">02</span>
+      <div class="project-body">
+        <div class="project-title">App de Gestion de Projet (Sprint 48h)</div>
+        <div class="project-desc">Développement rapide d'une plateforme collaborative full-stack avec intégration IA via Claude Desktop.</div>
+        <div class="project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Claude / MCP</span>
+        </div>
+      </div>
+      <div class="project-meta">
+        <span class="project-badge">Dév. · Full Stack</span>
+        <div class="project-toggle">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M5 1v8M1 5h8" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="project-detail">
+      <p class="project-detail-text">
+        Développement intensif en 48 heures d'une application de gestion de tâches. Utilisation de Next.js pour le framework, Tailwind CSS pour l'interface responsive et Supabase pour l'authentification et la base de données en temps réel. Le projet inclut une connexion à Claude Desktop via le protocole MCP, permettant à l'IA d'interagir directement avec les données de l'application pour assister l'utilisateur.
+      </p>
+      <div class="project-stats">
+        <div class="stat">
+          <div class="stat-label">Durée</div>
+          <div class="stat-val">48 heures</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Statut</div>
+          <div class="stat-val"><span class="status-dot dot-done"></span>Terminé</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">IA</div>
+          <div class="stat-val">Connecté</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos">
+      <div class="section-header">
+        <span class="section-label">Bio</span>
+        <h2 class="section-title">À propos</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-label">Formation</div>
+          <div class="about-card-val">Bachelor Informatique — B2</div>
+          <div class="about-card-sub">Spécialisation Technicien SI</div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-label">Objectif professionnel</div>
+          <div class="about-card-val">Technicien SI ou Administrateur systèmes junior</div>
+          <div class="about-card-sub">Préparation CompTIA A+ / ITIL v4</div>
+        </div>
+        <div class="about-card wide">
+          <div class="about-card-label">Compétences techniques</div>
+          <div class="skills-wrap">
+            <span class="skill">Windows Server</span>
+            <span class="skill">Active Directory</span>
+            <span class="skill">Linux Debian</span>
+            <span class="skill">Proxmox VE</span>
+            <span class="skill">GLPI</span>
+            <span class="skill">PowerShell</span>
+            <span class="skill">Bash</span>
+            <span class="skill">pfSense</span>
+            <span class="skill">VMware</span>
+            <span class="skill">GPO</span>
+            <span class="skill">DNS / DHCP</span>
+            <span class="skill">Git</span>
+            <span class="skill">TCP/IP</span>
+            <span class="skill">Office 365</span>
+          </div>
+        </div>
+        <div class="about-card wide">
+          <div class="about-card-label">Parcours</div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2024 — présent</div>
+              <div class="tl-title">Bachelor Informatique — Spécialité Technicien SI</div>
+              <div class="tl-desc">Administration système, support utilisateur, gestion de parc et infrastructure virtualisée.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2022 — 2024</div>
+              <div class="tl-title">BTS SIO — Option SISR</div>
+              <div class="tl-desc">Administration réseaux, services informatiques, bases de la sécurité système.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">Loisirs</div>
+              <div class="tl-title">Homelab · Self-hosting · Veille IT</div>
+              <div class="tl-desc">Gestion d'un homelab personnel sous Proxmox, auto-hébergement de services (Nextcloud, Vaultwarden, Jellyfin).</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <span class="section-label">Liens</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:aimeric.egal@gmail.com">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.8">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m2 7 10 7 10-7"/>
+            </svg>
+          </div>
+          <div class="contact-type">Email</div>
+          <div class="contact-val">aimeric.egal@email.fr</div>
+        </a>
+
+        <a class="contact-card" href="https://fr.linkedin.com/in/aimeric-egal-8468a3355" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.8">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div class="contact-type">LinkedIn</div>
+          <div class="contact-val">Aimeric Egal</div>
+        </a>
+
+        <a class="contact-card" href="https://github.com/Aimeric0/" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.8">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <div class="contact-type">GitHub</div>
+          <div class="contact-val">aimericegal</div>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Aimeric Egal</span>
+      <a class="footer-back" href="#top">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
